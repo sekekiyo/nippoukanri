@@ -4,7 +4,7 @@ package constants;
  *
  */
 public enum ForwardConst {
-    //action
+  //action
     ACT("action"),
     ACT_TOP("Top"),
     ACT_EMP("Employee"),
@@ -14,7 +14,7 @@ public enum ForwardConst {
     //command
     CMD("command"),
     CMD_NONE(""),
-    CMD_ONDEX("index"),
+    CMD_INDEX("index"),
     CMD_SHOW("show"),
     CMD_SHOW_LOGIN("showLogin"),
     CMD_LOGIN("login"),
@@ -31,7 +31,7 @@ public enum ForwardConst {
     FW_LOGIN("login/login"),
     FW_EMP_INDEX("employees/index"),
     FW_EMP_SHOW("employees/show"),
-    FW_EMP_NEW("employees/show"),
+    FW_EMP_NEW("employees/new"),
     FW_EMP_EDIT("employees/edit"),
     FW_REP_INDEX("reports/index"),
     FW_REP_SHOW("reports/show"),
@@ -49,12 +49,14 @@ public enum ForwardConst {
     private ForwardConst(final String text) {
         this.text = text;
     }
+
     /**
      * 値(文字列)取得
      */
     public String getValue() {
         return this.text;
     }
+
     /**
      * 値(文字列)から、該当する定数を返却する
      * (例: "Report"→ForwardConst.ACT_REP)
@@ -69,6 +71,7 @@ public enum ForwardConst {
         }
         return CMD_NONE;
     }
+
 
 
 }

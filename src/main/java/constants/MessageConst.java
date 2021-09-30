@@ -38,5 +38,4 @@ public enum MessageConst {
     public String getMessage() {
         return this.text;
     }
-
 }

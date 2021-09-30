@@ -5,7 +5,7 @@ package constants;
  *
  */
 public enum AttributeConst {
-    //フラッシュメッセージ
+  //フラッシュメッセージ
     FLUSH("flush"),
 
     //一覧画面共通
@@ -25,7 +25,7 @@ public enum AttributeConst {
     //従業員管理
     EMPLOYEE("employee"),
     EMPLOYEES("employees"),
-    EMP_COUNT("employee_count"),
+    EMP_COUNT("employees_count"),
     EMP_ID("id"),
     EMP_CODE("code"),
     EMP_PASS("password"),
@@ -47,7 +47,7 @@ public enum AttributeConst {
     REP_ID("id"),
     REP_DATE("report_date"),
     REP_TITLE("title"),
-    REP_OMNTENT("content");
+    REP_CONTENT("content");
 
     private final String text;
     private final Integer i;
