@@ -36,12 +36,14 @@ import lombok.Setter;
             name = JpaConst.Q_EMP_GET_BY_CODE_AND_PASS,
             query = JpaConst.Q_EMP_GET_BY_CODE_AND_PASS_DEF)
 })
+
 @Getter //全てのクラスフィールドについてgetterを自動生成する(Lombok)
 @Setter //全てのクラスフィールドについてsetterを自動生成する(Lombok)
 @NoArgsConstructor //引数なしコンストラクタを自動生成する(Lombok)
 @AllArgsConstructor //全てのクラスフィールドを引数にもつ引数ありコンストラクタを自動生成する(Lombok)
 @Entity
 public class Employee {
+
     /**
      * id
      */
@@ -53,7 +55,7 @@ public class Employee {
     /**
      * 社員番号
      */
-    @Column(name = JpaConst.EMP_COL_CODE,nullable = false, unique = true)
+    @Column(name = JpaConst.EMP_COL_CODE, nullable = false, unique = true)
     private String code;
 
     /**
